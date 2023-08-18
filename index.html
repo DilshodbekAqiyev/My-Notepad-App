@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad</title>
+    <link
+      rel="stylesheet icon"
+      href="https://www.file-extensions.org/imgs/app-icon/128/759/microsoft-windows-notepad-icon.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="notepad-container">
+      <div class="title-bar">
+        <img
+          class="notepad-icon"
+          src="https://www.file-extensions.org/imgs/app-icon/128/759/microsoft-windows-notepad-icon.png"
+        />
+        <span class="title"></span>
+      </div>
+
+      <nav class="menu-bar">
+        <ul class="nav">
+          <li>
+            <a href="#">File</a>
+            <ul class="sub-menu">
+              <li class="new-file"><a href="#">New</a></li>
+              <li class="open-file"><a href="#">Open...</a></li>
+              <li style="display: none"><input type="file" id="file-input" /></li>
+              <li class="save"><a href="#">Save</a></li>
+              <li class="save-as"><a href="#">Save As...</a></li>
+              <li class="separator"><a href="#"></a></li>
+              <li><a href="#">Page Setup</a></li>
+              <li><a href="#">Print...</a></li>
+              <li class="separator"><a href="#"></a></li>
+              <li><a href="#">Exit</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Edit</a>
+            <ul class="sub-menu">
+              <li class="undo"><a href="#">Undo</a></li>
+              <li class="separator"><a href="#"></a></li>
+              <li class="cut"><a class="disabled" href="#">Cut</a></li>
+              <li class="copy"><a class="disabled" href="#">Copy</a></li>
+              <li class="paste"><a href="#">Paste</a></li>
+              <li class="delete"><a class="disabled" href="#">Delete</a></li>
+              <li class="separator"><a href="#"></a></li>
+              <li><a href="#">Find...</a></li>
+              <li><a href="#">Find Next</a></li>
+              <li><a href="#">Replace...</a></li>
+              <li><a class="disabled" href="#">Go To...</a></li>
+              <li class="separator"><a href="#"></a></li>
+              <li class="select-all"><a href="#">Select All</a></li>
+              <li><a href="#">Time/Date</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Format</a>
+            <ul class="sub-menu">
+              <li><a href="#">Word Wrap</a></li>
+              <li><a href="#">Font...</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">View</a>
+            <ul class="sub-menu">
+              <li><a class="disabled" href="#">Status Bar</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#0">Help</a>
+            <ul class="sub-menu">
+              <li><a href="https://github.com/DilshodbekAqiyev" target="_blank">View Help</a></li>
+              <li class="separator"><a href="#"></a></li>
+              <li><a href="#">About Notepad</a></li>
+            </ul>
+          </li>
+        </ul>
+        <input type="text" id="title" placeholder="Enter title" />
+      </nav>
+
+      <textarea></textarea>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
