@@ -29,6 +29,11 @@ body {
   font-size: 14px;
   line-height: 26px;
   vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: inherit;
+  border-bottom-right-radius: 0px;
 }
 .notepad-container .menu-bar {
   position: relative;
@@ -171,6 +176,14 @@ body {
   border-radius: 5px;
   margin-bottom: 5px;
   display: none;
+}
+.close-window {
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.close-window:hover {
+  background: red;
 }
 
 @media screen and (max-width: 800px) {

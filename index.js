@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     selectAllBtn = document.querySelector(".select-all"),
     title = document.querySelector(".title"),
     undoBtn = document.querySelector(".undo"),
-    titleNameInput = document.querySelector("#title");
+    titleNameInput = document.querySelector("#title"),
+    closeWindowBtn = document.querySelector(".close-window");
 
   title.textContent = `Notepad`;
   const history = JSON.parse(sessionStorage.getItem("history")) || [];
@@ -33,6 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     title.textContent = "Notepad";
   }
+
+  closeWindowBtn.addEventListener("click", () => {
+    window.close();
+  });
 
   saveBtn.addEventListener("click", () => {
     titleNameInput.style.display = "block";
